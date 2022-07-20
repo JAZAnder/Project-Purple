@@ -21,4 +21,12 @@ namespace LearningStarter.Common
             return userDto;
         }
     }
+    public static class ChanceCalculator
+    {
+        public static bool Calculate(Chance chance)
+        {
+            Random random = new Random();
+            return chance.ChanceLevel >= random.Next(100);
+        }
+    }
 }
