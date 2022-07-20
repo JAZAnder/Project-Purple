@@ -6,6 +6,8 @@ namespace LearningStarter.Entities
     {
         public int Id { get; set; }
 
+        public int Health { get; set; }
+
         public Spell[] Spells { get; set; }
     }
 }
