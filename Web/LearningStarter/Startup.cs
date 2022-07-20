@@ -147,6 +147,16 @@ namespace LearningStarter
                 };
                 
                 dataContext.Users.Add(seededUser);
+
+                var Joshua = new User
+                {
+                    FirstName = "Joshua",
+                    LastName = "Cantu",
+                    Username = "JCantu",
+                    Password = "password"
+                };
+
+                dataContext.Users.Add(seededUser);
                 dataContext.SaveChanges();
             }
         }
