@@ -11,6 +11,9 @@ namespace LearningStarter.Entities
         public string LastName { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+
+        public List<Golem> Golems { get; set; }
+            = new List<Golem>();
     }
 
     public class UserCreateDto
