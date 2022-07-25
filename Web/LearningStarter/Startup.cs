@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using LearningStarter.Seeds;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace LearningStarter
@@ -155,8 +156,11 @@ namespace LearningStarter
                     Username = "JCantu",
                     Password = "password"
                 };
-
-                dataContext.Users.Add(seededUser);
+                // Seed thing in the corisponding Seeding file in the Seeds folder
+                // them import them into the datacontext as seen below
+                dataContext.Users.Add(Joshua);
+                dataContext.golemTypes.Add(SeededGolemTypes.Fire);
+                dataContext.golems.Add(SeededGolems.Stevie);
                 dataContext.SaveChanges();
             }
         }
