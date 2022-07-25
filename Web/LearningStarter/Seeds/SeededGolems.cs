@@ -1,6 +1,14 @@
-﻿namespace LearningStarter.Seeds
+﻿using LearningStarter.Entities;
+namespace LearningStarter.Seeds
 {
-    public class Golem
+    public static class SeededGolems
     {
+        public static Golem Stevie = new Golem
+        {
+            Henry = "Stevie Wonder",
+            GolemType = SeededGolemTypes.Fire,
+            
+            
+        };
     }
 }
